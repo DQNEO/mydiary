@@ -1,0 +1,27 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+<a id="link_to_new_post" href="?mode=Entry_Create">投稿</a> <a id="link_to_categories" href="?mode=Category_List" style="margin-left:20px;">カテゴリ</a>
+
+<p id="message">[%message%]</p>
+
+<TMPL_LOOP NAME=list>
+<div class="entry_item">
+
+  <p>
+    <h2 class="entry_title"><a href="?mode=Entry_Display&id=%id%">[%title%]</a></h2>
+  </p>
+   <p><TMPL_VAR ESCAPE=NONE NAME=body></p>
+
+   <p class='entry_footer'>
+     %created_on% | 
+    <a class="link_category" href="?mode=Category_List">[%name%]</a> | 
+    <a class="link_edit" href="?mode=Entry_Edit&amp;id=%id%">編集</a> | 
+    <a class="link_delete" href="?mode=Entry_Delete&amp;id=%id%" onclick="return confirm('are you sure?');">削除</a>
+   </p>
+
+</div>
+</TMPL_LOOP>
+
+
+<TMPL_INCLUDE NAME="footer.tmpl">
+

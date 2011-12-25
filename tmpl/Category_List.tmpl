@@ -1,0 +1,11 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+<a href="?mode=Category_Create">new post</a> <a href="?mode=Category_List">Categories</a>
+
+<TMPL_LOOP NAME=list>
+  <p><h2 class="category_name">%name%  </h2> <a href="?mode=Category_Edit&amp;id=%id%">edit</a> <a href="?mode=Category_Delete&amp;id=%id%" onclick="return confirm('are you sure?');">delete</a></p>
+   <p>%created_on%</p>
+</TMPL_LOOP>
+
+<TMPL_INCLUDE NAME="footer.tmpl">
+

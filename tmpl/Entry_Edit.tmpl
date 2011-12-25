@@ -1,0 +1,19 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+    <h2>an entry</h2>
+    <form>
+      <input type="hidden" name="mode" value="Entry_Confirm" />
+      <input type="hidden" name="submode" value="Entry_Edit" />
+      <input type="hidden" name="id" value="%id%" />
+      Title<br/>
+      <input type="text" name="title" value="%title%" /> <br/>
+      Body<br/>
+      <textarea name="body" style="width:400px;height:100px;">%body%</textarea>
+      <br/>
+      <input type="submit" value="  投稿する  "  />
+
+
+    </form>
+
+
+<TMPL_INCLUDE NAME="footer.tmpl">

@@ -1,0 +1,21 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+    <h3>確認画面</h3>
+    <form>
+      <input type="hidden" name="mode" value="Entry_Save" />
+      <input type="hidden" name="submode" value="%submode%" />
+      <input type="hidden" name="id" value="%id%" />
+      <input type="hidden" name="title" value="%title%" />
+      <input type="hidden"  name="body" value="%body%"  >
+      <input type="hidden"  name="categories_id" value="%categories_id%"  >
+
+      <h2>%title%</h2>
+      <p>%body%</p>
+      <p>%categories_id%</p>
+      
+      <br/>
+      <input type="submit" value="  投稿する  "  />
+
+    </form>
+
+<TMPL_INCLUDE NAME="footer.tmpl">

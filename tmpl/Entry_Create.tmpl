@@ -1,0 +1,24 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+  <div id="input_entry" style="margin-left:20px;width:700px;" >
+  <form>
+    <h2 id="page_title" style="margin:0; padding-left:0px; ">新規投稿</h2>
+    <input type="hidden" name="mode" value="Entry_Confirm" />
+    件名<br/>
+    <input type="text" name="title"  style="width:700px;" /> <br/>
+    本文<br/>
+    <textarea id="input_entry_body" name="body"  ></textarea>
+    <p id="category_input" style="display:inline; text-align:right; margin-left:150px; padding-right:50px;">カテゴリ
+    <select name="categories_id" >
+      <TMPL_LOOP name="categories">
+	<option value="%id%">%name%</option>
+      </TMPL_LOOP>
+    </select>
+    </p>
+    <p style="margin:0; display:inline" >
+      <input type="submit" value="  投稿する  "  />
+    </p>
+  </form>
+  </div>
+
+<TMPL_INCLUDE NAME="footer.tmpl">

@@ -1,0 +1,35 @@
+body { padding: 0; margin : 0; background-color: #911; }
+a { text-decoration : none;}
+a:hover { text-decoration : underline ; }
+
+
+#header   { height:50px; padding:15px 0 15px 20px; margin:0;}
+
+#content { margin-top:10px; padding:10px 0px 10px 20px; background-color: #fff; }
+
+#footer  {
+ text-align: center;
+ padding-top:10px;
+ color:#fff
+}
+
+#footer p { margin:10px; }
+
+h1 a { color : #fff; }
+
+.entry_title { display:inline; }
+.entry_title a { color:#000; }
+.entry_footer { color:#666; font-size:smaller; }
+
+a.link_edit   { color:#666; }
+a.link_delete { color:#666; }
+
+h2.category_name { display:inline; }
+
+.entry_item { margin: 10px 0px 30px 0px; }
+
+#message { width:150px; margin-left:50px; color:#333; font-weight:normal; background-color:#faa; text-align:center;}
+
+#input_entry_body {  width:700px; height:300px;  } 
+
+a#link_to_new_post:visited ,a#link_to_categories:visited { color:#00f; }{ color:#00f; }
